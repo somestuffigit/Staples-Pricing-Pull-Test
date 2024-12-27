@@ -9,14 +9,86 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #cc0000;
+            color: white;
+            padding: 20px 0;
         }
         h1 {
-            color: #333;
+            margin: 0;
+        }
+        .pricing-table {
+            margin: 40px 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .pricing-table th, .pricing-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact-info {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Staples Pricing</h1>
-    <p>This is a test page for our pricing system.</p>
+    <header>
+        <div class="container">
+            <h1>Welcome to Staples Pricing</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Our Pricing System</h2>
+            <p>Welcome to Staples' innovative pricing system. We strive to provide competitive prices while maintaining the highest quality of service.</p>
+        </section>
+
+        <section class="pricing">
+            <h2>Pricing Table</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>$99/mo</td>
+                        <td>$199/mo</td>
+                        <td>Contact Us</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: support@staples.com</p>
+            <p>Phone: 1-800-STAPLES</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Staples Inc. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
